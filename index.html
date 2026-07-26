@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCT COMPUTERS</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="home_page.css">
+    <script src="main.js" defer></script>
+</head>
+
+<div class="start" id="start">
+    <div class="start-image"></div>
+    <span style="color:white;font-size:5vw;">Welcome to CCT Computers</span>
+</div>
+<div id="login-wrap">
+    <div class="login">
+    <span>Log in</span>
+    <span id="close-log" onclick="closelog()"></span>
+    <input type="text" id="username" placeholder="username">
+    <input type="password" id="password" placeholder="password">
+    <div onclick="login()">Log In</div>
+    </div>
+</div>
+<div class="body" id="body">
+    
+
+
+    <nav class="navigation">
+        <ul>
+
+            <li onclick="document.location='./home_page.html'">Home
+            <li onclick="document.location='./aII_courses/all_courses.html'">Courses
+            <li onclick="login_home()"id="login_home">Login
+            <li onclick="document.location='#about'">About Us
+            <li id="manage" onclick="manage_course()">Manage courses
+            <li onclick="document.location='#contact'">Contact Us
+
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="intro">
+                <div class="intro-text">
+
+                    <h2> It's Time to unlock <br><b>New Skills</b> with</h2>
+                    <h1>CCT COMPUTERS</h1>
+                </div>
+                <div class="intro-image-wrap">
+                    <div style="background:url(images/intro.jpg);">
+
+                    </div>
+                    <div style="background:url(images/intro2.jpg);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="courses-section">
+
+                <span>COURSES</span>
+
+                <div class="courses">
+                    <div class="card">
+                        <div class="card-iamge">
+                            <img src="images/basics.jpg">
+                        </div>
+                        <div class="card-title">COMPUTER BASICS</div>
+                        <div class="card-desc">discription</div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-iamge">
+                            <img src="images/adca.jpg">
+                        </div>
+                        <div class="card-title">ADCA</div>
+                        <div class="card-desc">discription</div>
+
+
+                    </div>
+                    <div class="card">
+                        <div class="card-iamge">
+                            <img src="images/dca.jpg">
+                        </div>
+                        <div class="card-title">DCA</div>
+                        <div class="card-desc">discription</div>
+
+
+                    </div>
+                    <div class="card">
+                        <div class="card-iamge">
+                            <img src="images/python.jfif">
+                        </div>
+                        <div class="card-title">PYTHON</div>
+                        <div class="card-desc">discription</div>
+
+
+                    </div>
+                    <div class="card">
+                        <div class="card-iamge">
+                            <img src="images/OIP (1).jfif">
+                        </div>
+                        <div class="card-title">C++</div>
+                        <div class="card-desc">discription</div>
+
+
+                    </div>
+                    <div class="card">
+                        <div class="card-iamge">
+                            <img src="images/tally.jpg">
+                        </div>
+                        <div class="card-title">Tally</div>
+                        <div class="card-desc">discription</div>
+
+
+                    </div>
+                </div>
+                <div class="explore-btn" onclick="document.location='./aII_courses/all_courses.html'">Explore all</div>
+            </div>
+            <hr>
+
+        </section>
+        <section id="about">
+            <span>ABOUT US</span>
+            <div class="about-us">
+                <div style="width:70%;">
+                <p>Welcome to CCT Computer, your premier destination for cutting-edge computer education and training.
+                    At CCT Computer, we believe in empowering individuals with the skills and knowledge needed to thrive
+                    in today’s digital world. Our mission is to provide comprehensive, hands-on training that caters to
+                    beginners and advanced learners alike.
+                </p>
+                <P>
+
+                    With a team of experienced instructors and state-of-the-art facilities, we offer a wide range of
+                    courses, including programming, web development, graphic design, and IT certifications. Our
+                    curriculum is designed to keep pace with industry trends, ensuring our students are well-prepared
+                    for the challenges of the modern workforce.
+                </P>
+                <P>
+
+                    At CCT Computer, we foster a supportive learning environment that encourages creativity and
+                    collaboration. Whether you're looking to enhance your skills for career advancement or explore new
+                    technologies, we are here to guide you every step of the way. Join us and take the first step toward
+                    a brighter future in technology!
+                </p>
+                </div>
+                <div class="about-img">
+
+                    
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="image-gallery">
+                <span>Images</span>
+                <div class="image-container">
+                    <div style="background: url(images/IMG20240905121537.jpg);"></div>
+                    <div style="background: url(images/IMG20240905121543.jpg);"></div>
+                    <div style="background: url(images/IMG20240905121609.jpg);"></div>
+                    <div style="background: url(images/IMG20240905121709.jpg);"></div>
+                    <div style="background: url(images/IMG20240905121711.jpg);"></div>
+                    <div style="background: url(images/IMG20240905121727.jpg);"></div>
+
+                </div>
+            </div>
+
+            <div class="whatsapp" onclick="location.href='https://wa.me/919935175666'"></div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="contact" id="contact">
+            <div class="insta" style="background:url(images/instagram.png);"
+                onclick="location.href='https://www.instagram.com/cct_computer'"></div>
+            <div class="facebook" style="background:url(images/facebook.png);"
+                onclick="location.href='https://www.facebook.com/cctcomputers'"></div>
+            <div class="maps" style="background:url(images/location.jpg);"
+                onclick="location.href='https://maps.app.goo.gl/dVNb8KPR464UgjY6A'"></div>
+            <div class="email" style="background:url(images/email.png);"
+                onclick="location.href='mailto:cctobra@gmail.com'"></div>
+        </div>
+        <span style="color: blue;margin: 2vw;" onclick="location.href='mailto:snipersharma18@gmail.com'">Contact
+            Developer</span>
+        <span>Date Created: 27th September 2024</span>
+
+    </footer>
+</div>
+
+</html>
