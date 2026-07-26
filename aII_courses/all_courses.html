@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCT COMPUTER-ALL COURSES</title>
+    <link rel="stylesheet" href="all_courses.css">
+    <!-- this script works when connected to internet,altrnate method is used below.
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="jquery-3.7.1.js"></script>
+    <!-- this script is used to check if jquery is loaded successfully -->
+    <!-- <script>
+        if (typeof jQuery !=="undefined"){
+            console.log("loaded!!")
+        }else{
+            console.log("not loaded!!")
+            
+        }
+    </script> -->
+    <script src="../course_db.js"></script>
+    <script src="all_courses.js" defer></script>
+</head>
+
+<body>
+
+    <div class="nav" style="display:flex; justify-content: space-around;">
+        <div class="home" onclick="document.location='./../home_page.html'" >Home</div>
+        <div class="header">
+            <span>ALL COURSES</span>
+            
+        </div>
+    </div>
+    <div class="content">
+        <div id="course-container" class="container">
+            <div style="font-size: larger; font-weight: 300; color:
+                white;">COURSES LIST</div>
+            <div id="course-list" class="course-list">
+
+
+            </div>
+
+        </div>
+        <div class="container" style="width: 20vw;">
+            <div style="font-size: larger;width: 100%; font-weight: 300; color:
+                white;position: sticky;top: 0rem;">CHAPTERS</div>
+            <div id="chapter-list" class="chapter-list">
+
+            </div>
+
+        </div>
+        <div class="preview" onclick="preview.requestFullscreen()">
+            <div id="courseName"></div>
+            <iframe id="preview" allowfullscreen title="frame" src=""></iframe>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

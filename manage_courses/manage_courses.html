@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Courses</title>
+    <!-- <script src="course_db.js" defer></script> -->
+    <script src="manage_courses.js" defer></script>
+    <link rel="stylesheet" href="manage_courses.css">
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <header>
+        <span>Manage Courses</span>
+    </header>
+    <section class="section-main">
+        <div class="home"onclick="document.location='./../home_page.html'">Home</div>
+        <div id="course-container" class="container">
+            <span style="font-weight: 800;">COURSES</span>
+            <div id="course-list"></div>
+            <button type="button" class="button add_button" title="add-cou-btn" onclick="addCourse()">Add
+                Course</button>
+
+        </div>
+        <div id="chapter-container" class="container">
+            <span id="ch-container-heading">Course Name</span>
+            <div id="chapter-list">
+                <!-- is div me kuch bhi add nhi likhna hai wrna gadbad ho jayega -->
+            </div>
+            <button type="button" class="button" id="span-button" onclick="addChapter()">Add Cahpter</button>
+            <button type="button" class="button" id="save-button" onclick="save()">Save</button>
+        </div>
+
+    </section>
+</body>
+
+</html>

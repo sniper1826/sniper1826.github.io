@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: antiquewhite;
+    font-size: 2vw;
+}
+
+header {
+
+    text-align: center;
+    font-size: 3vw;
+}
+.home{
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    font-size: 1vw;
+    border:2px solid white;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    &&:hover{
+        color: black;
+        background-color: antiquewhite;
+    }
+}
+
+.section-main {
+    display: flex;
+}
+
+#course-container {
+    text-align: center;
+    width: 30vw;
+    border: 2px solid;
+    margin: 2vw;
+    border-radius: 5px;
+    height: max-content;
+}
+
+#course-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px 5px;
+    overflow-y: scroll;
+    height: 65vh;
+}
+
+#course-list div {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+    gap: 1vw;
+    border-radius: 5px;
+
+    &&:is(:hover, :focus-visible) {
+        background-color: rgb(29 107 121 / 84%);
+        font-weight: 900;
+    }
+
+    &&:active {
+        color: aqua;
+    }
+
+}
+
+#chapter-container {
+    width: 70vw;
+    margin: 0.2vw;
+    border: 2px solid;
+    margin: 2vw;
+    border-radius: 5px;
+    text-align: center;
+    height: max-content;
+    box-sizing: border-box;
+
+}
+
+#chapter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin: 3px;
+    width: 99%;
+    border-radius: 5px;
+    background-color: rgb(29 107 121 / 84%);
+    overflow-y: scroll;
+    height: 78vh;
+
+}
+
+#chapter-list div {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 5px;
+
+}
+
+.button {
+    background-color: rgb(231, 50, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 0.5vw;
+    margin: 0.2vw;
+
+    &&:hover {
+        background-color: rgba(93, 81, 207, 0.74);
+    }
+
+    &&:active {
+        color: aqua;
+    }
+}
+
+input {
+
+    border: 0px solid white;
+    padding-left: 1vw;
+    border-radius: 5px;
+    background-color: rgb(250, 215, 170);
+    height: 5vh;
+    color: rgb(46, 46, 78);
+    font-size: small;
+    width: 25%;
+
+    &&:is(:hover, :focus) {
+        outline: 2px aqua solid;
+    }
+}
+
+.link-input {
+    width: 60%;
+}
+
+#add-course-section {
+    display: flex;
+    margin: 0px 0.5vw;
+    padding: 0.5vw;
+    justify-content: space-between;
+}
+
+.add_button {
+    margin: 5px 5px 2VW ;
+
+    &&:disabled {
+        border-color: rgb(180, 169, 169);
+        color: rgb(180, 169, 169);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(transparent, rgb(255, 255, 255));
+}
